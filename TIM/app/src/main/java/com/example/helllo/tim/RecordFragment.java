@@ -1,19 +1,22 @@
 package com.example.helllo.tim;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.Fragment;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 
@@ -24,6 +27,7 @@ import static com.example.helllo.tim.R.layout.record_item;
  * Created by Owner on 2017-05-20.
  */
 
+@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class RecordFragment extends Fragment {
     MainActivity activity;
     MyAdapter adapter;

@@ -1,6 +1,7 @@
 package com.example.helllo.tim;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -11,8 +12,6 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -302,7 +301,7 @@ public class TimerActivity extends AppCompatActivity implements View.OnClickList
 
     // 성공/실패 여부 묻는 대화상자 만들기
     private AlertDialog createDialogBoxForFocus(){
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        AlertDialog.Builder builder = new AlertDialog.Builder;
         builder.setTitle("정말 집중하셨나요?");
         builder.setMessage("양심적으로 체크해주세요.\n'네'를 누르면 코인이 적립됩니다.\n'아니오'를 누르면 시간이 기록되지 않고 타이머가 초기화됩니다.");
         builder.setIcon(R.drawable.coin);

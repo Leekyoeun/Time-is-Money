@@ -11,6 +11,8 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
+import org.jetbrains.annotations.Nullable;
+
 public class CircleProgressBar extends View {
 
     /* ProgressBar's line thickness */

@@ -37,4 +37,5 @@ public class QuestItem {
     public void setNumber(int number) {
         this.q_number = number;
     }
+
 }
